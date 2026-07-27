@@ -1,7 +1,7 @@
 package mypack;
 
 public class CheckerBean {
-    private string, name, age, hob, email,gender,error;
+    private string name, age, hob, email,gender,error;
     public CheckerBean(){
         error="";
     }
