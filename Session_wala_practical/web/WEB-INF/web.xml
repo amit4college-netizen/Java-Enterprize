@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>SessionPage</servlet-name>
+        <servlet-class>SessionPage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Page2</servlet-name>
+        <servlet-class>Page2</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Page3</servlet-name>
+        <servlet-class>Page3</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>LogoutServlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutSevlet</servlet-name>
+        <servlet-class>LogoutSevlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionPage</servlet-name>
+        <url-pattern>/SessionPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Page2</servlet-name>
+        <url-pattern>/Page2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Page3</servlet-name>
+        <url-pattern>/Page3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutSevlet</servlet-name>
+        <url-pattern>/LogoutSevlet</url-pattern>
+    </servlet-mapping>
+</web-app>
