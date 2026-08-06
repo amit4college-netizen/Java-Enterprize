@@ -19,7 +19,7 @@
  if(rs.next()){
  if(pass.equals(rs.getString(1)))
  {
- out.println("<h1>~~~ LOGIN SUCCESSFULLL ~~~ </h1>");
+ out.println("<h1> ~~~ LOGIN SUCCESSFULLL ~~~ </h1>");
  }
  }
  else{
