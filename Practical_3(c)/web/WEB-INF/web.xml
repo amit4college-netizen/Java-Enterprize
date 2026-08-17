@@ -12,6 +12,10 @@
         <servlet-name>ReadingListener</servlet-name>
         <servlet-class>ReadingListener</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ReadingNonBlockingServlet</servlet-name>
+        <servlet-class>.ReadingNonBlockingServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>java</servlet-name>
         <url-pattern>/java</url-pattern>
@@ -23,5 +27,9 @@
     <servlet-mapping>
         <servlet-name>ReadingListener</servlet-name>
         <url-pattern>/ReadingListener</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ReadingNonBlockingServlet</servlet-name>
+        <url-pattern>/ReadingNonBlockingServlet</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -1,0 +1,29 @@
+Java Performance: The Definitive Guide
+Enterprise Java with Jakarta EE
+Head First Servlets and JSP
+Clean Code: A Handbook of Agile Software Craftsmanship
+Alice's Adventures in Wonderland - Lewis Carroll
+The Wonderful Wizard of Oz - L. Frank Baum
+Peter and Wendy (Peter Pan) - J.M. Barrie
+The Tale of Peter Rabbit - Beatrix Potter
+The Secret Garden - Frances Hodgson Burnett
+The Jungle Book - Rudyard Kipling
+The Adventures of Tom Sawyer - Mark Twain
+Adventures of Huckleberry Finn - Mark Twain
+Treasure Island - Robert Louis Stevenson
+The Happy Prince and Other Tales - Oscar Wilde
+Andersen's Fairy Tales - Hans Christian Andersen
+The Blue Fairy Book - Andrew Lang
+The Adventures of Pinocchio - Carlo Collodi
+A Little Princess - Frances Hodgson Burnett
+Little Women - Louisa May Alcott
+The Wind in the Willows - Kenneth Grahame
+The Velveteen Rabbit - Margery Williams
+Grimm's Household Tales - Jacob and Wilhelm Grimm
+Gulliver's Travels - Jonathan Swift
+Robinson Crusoe - Daniel Defoe
+A Christmas Carol - Charles Dickens
+The Chronicles of Narnia: The Lion, the Witch and the Wardrobe - C.S. Lewis
+Charlotte's Web - E.B. White
+The Hobbit - J.R.R. Tolkien
+Charlie and the Chocolate Factory - Roald Dahl

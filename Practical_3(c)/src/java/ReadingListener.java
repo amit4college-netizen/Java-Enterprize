@@ -1,33 +1,30 @@
 
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.AsyncContext;
+import jakarta.servlet.ReadListener;
+import jakarta.servlet.ServletInputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
  *
  * @author Nirmal
  */
-public class ReadingListener extends HttpServlet {
+public class ReadingListener implements ReadListener{
+    private ServletInputStream input = null;
+    private AsyncContext ac = null;
 
-
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet ReadingListener</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet ReadingListener at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-        }
+    ReadingListener(ServletInputStream in, AsyncContext c){
+        input = in;
+        ac = c;
+    }
+    @Override
+    public void onDataAvailable() throws IOException{
+    }
+    public void onAllDataRead() throws IOException{
+        ac.complete();
+    }
+    public void onError(final Throwable t){
+        ac.complete();
+        t.printStackTrace();
     }
 
     
