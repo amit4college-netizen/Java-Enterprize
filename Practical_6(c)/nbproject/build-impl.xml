@@ -14,7 +14,7 @@ is divided into following sections:
   - cleanup
 
 -->
-<project xmlns:ear2="http://www.netbeans.org/ns/j2ee-earproject/2" basedir=".." default="default" name="Practical6-c-impl">
+<project xmlns:ear2="http://www.netbeans.org/ns/j2ee-earproject/2" basedir=".." default="default" name="Practical_6(c)-impl">
     <import file="ant-deploy.xml"/>
     <fail message="Please build using Ant 1.7.1 or higher.">
         <condition>
@@ -432,17 +432,17 @@ exists or setup the property manually. For example like this:
         <ear2:run-appclient subprojectname="${app.client}"/>
     </target>
     <target if="j2ee.appclient.mainclass.args" name="-as-retrieve-option-workaround" unless="j2ee.clientName">
-        <property name="client.jar" value="${dist.dir}/Practical6-cClient.jar"/>
+        <property name="client.jar" value="${dist.dir}/Practical_6(c)Client.jar"/>
         <sleep seconds="3"/>
-        <copy failonerror="false" file="${wa.copy.client.jar.from}/Practical6-c/Practical6-cClient.jar" todir="${dist.dir}"/>
+        <copy failonerror="false" file="${wa.copy.client.jar.from}/Practical_6(c)/Practical_6(c)Client.jar" todir="${dist.dir}"/>
         <copy failonerror="false" flatten="true" todir="${dist.dir}/">
-            <fileset dir="${wa.copy.client.jar.from}/Practical6-c" includes="**/Practical6-cClient.jar"/>
+            <fileset dir="${wa.copy.client.jar.from}/Practical_6(c)" includes="**/Practical_6(c)Client.jar"/>
         </copy>
-        <copy flatten="true" todir="${dist.dir}/Practical6-cClient">
-            <fileset dir="${wa.copy.client.jar.from}/Practical6-c" includes="**/*.*ar"/>
+        <copy flatten="true" todir="${dist.dir}/Practical_6(c)Client">
+            <fileset dir="${wa.copy.client.jar.from}/Practical_6(c)" includes="**/*.*ar"/>
         </copy>
-        <copy failonerror="false" flatten="false" todir="${dist.dir}/Practical6-cClient">
-            <fileset dir="${dist.dir}/gfdeploy/Practical6-c" includes="**/*.jar"/>
+        <copy failonerror="false" flatten="false" todir="${dist.dir}/Practical_6(c)Client">
+            <fileset dir="${dist.dir}/gfdeploy/Practical_6(c)" includes="**/*.jar"/>
         </copy>
     </target>
     <target depends="init" name="-init-run-macros">
