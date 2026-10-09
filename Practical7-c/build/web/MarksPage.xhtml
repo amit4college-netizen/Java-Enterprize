@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html">
+
+    <h:head>
+        <title>Marks Entry</title>
+    </h:head>
+
+    <h:body>
+
+        <h1>Student Marks Entry</h1>
+
+        <h:form>
+
+            Student Name:
+            <h:inputText value="#{marks.name}"/>
+
+            <br/><br/>
+
+            Subject:
+            <h:inputText value="#{marks.subject}"/>
+
+            <br/><br/>
+
+            Marks:
+            <h:inputText value="#{marks.mark}"/>
+
+            <br/><br/>
+
+            <h:commandButton value="Save Marks"
+                             action="#{marks.save}"/>
+
+        </h:form>
+
+    </h:body>
+
+</html>

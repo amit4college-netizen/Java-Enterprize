@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html">
+
+    <h:head>
+        <title>Visitor Statistics</title>
+    </h:head>
+
+    <h:body>
+
+        <h1>Visitor Statistics</h1>
+
+        <h:form>
+
+            <h:commandButton value="Visit Page"
+                             action="#{visitor.visit}" />
+
+            <br/><br/>
+
+            Total Visitors:
+            #{visitor.count}
+
+        </h:form>
+
+    </h:body>
+
+</html>
