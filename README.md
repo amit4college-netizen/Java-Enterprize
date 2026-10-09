@@ -16,7 +16,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
 ![EJB](https://img.shields.io/badge/EJB-Enterprise%20Java-orange?style=for-the-badge)
 
-**A complete collection of Enterprise Java practical programs and solutions.**
+**A collection of Enterprise Java practical programs and solutions, organized by practical number.**
 
 </div>
 
@@ -61,38 +61,34 @@ The reference manual lists **JDK 8u181, NetBeans 8.1 or higher, and MySQL 5.5 or
 # 📂 Repository Structure
 
 ```text
-Enterprise-Java/
-│
-├── Practical-1/
-│   ├── 1a-Calculator-Servlet/
-│   ├── 1b-Login-Servlet/
-│   └── 1c-Registration-JDBC/
-│
-├── Practical-2/
-│   ├── 2a-RequestDispatcher/
-│   ├── 2b-Cookies/
-│   └── 2c-Sessions/
-│
-├── Practical-3/
-│   ├── 3a-File-Upload-Download/
-│   ├── 3b-Quiz-Application/
-│   └── 3c-NonBlocking-Read/
-│
-├── Practical-4/
-│   ├── 4a-JSP-Intrinsic-Objects/
-│   ├── 4b-JSP-Validation-JavaBean/
-│   └── 4c-JSP-Registration-Login-JDBC/
-│
-├── Practical-5/
-│   ├── 5a-Employee-Update/
-│   ├── 5b-JSP-Expression-Language/
-│   └── 5c-JSTL-CRUD/
-│
-├── Practical-6/
-│   ├── 6a-Currency-Converter-EJB/
-│   ├── 6b-Room-Reservation-EJB/
-│   └── 6c-Shopping-Cart-Stateful-EJB/
-│
+Java-Enterprize/
+├── Practical10-a/
+├── Practical10-b/
+├── Practical10-c/
+├── Practical8-c/
+├── Practical9-a/
+├── Practical9-b/
+├── Practical9-c/
+├── Practical_1(a)/
+├── Practical_1(b)/
+├── Practical_1(c)/
+├── Practical_2(a)/
+├── Practical_2(b)/
+├── Practical_2(c)/
+├── Practical_3(a)_FileDownloadApp/
+├── Practical_3(a)_FileUploadApp/
+├── Practical_3(b)/
+├── Practical_3(c)/
+├── Practical_4(a)/
+├── Practical_4(b)/
+├── Practical_4(c)/
+├── Practical_5(a)/
+├── Practical_6(c)/
+├── Practical_7(a)/
+├── Practical_7(b)/
+├── Practical_7(c)/
+├── Practical_8(a)/
+├── Practical_8(b)/
 └── README.md
 ```
 
@@ -657,29 +653,251 @@ Learn Java 8
 
 ---
 
+
+---
+
+# 🧪 Practical 7 — JSF & Enterprise JavaBeans (EJB)
+
+## 7a. JSF Hit Counter
+
+A JSF application that displays a hit counter using a managed bean and a Singleton EJB.
+
+### Main Files
+
+```text
+Practical_7(a)/
+├── HitCountPage.xhtml
+├── Count.java
+└── CounterBean.java
+```
+
+## 7b. Visitor Statistics Using EJB and Message-Driven Bean
+
+A visitor-tracking application using EJB components and a message-driven bean.
+
+### Main Files
+
+```text
+Practical_7(b)/
+├── VisitorPage.xhtml
+├── visitor.java
+├── VisitorCounter.java
+└── VisitorMessageBean.java
+```
+
+## 7c. Marks Entry Using EJB and MySQL
+
+A marks-entry application that uses a JSF page and an EJB to process marks data.
+
+### Main Files
+
+```text
+Practical_7(c)/
+├── MarksPage.xhtml
+├── Marks.java
+└── MarksBean.java
+```
+
+---
+
+# 🧪 Practical 8 — JPA Applications
+
+## 8a. Inventory Management Using JPA
+
+An inventory application using JPA entities and an EJB to manage product information.
+
+### Main Files
+
+```text
+Practical_8(a)/
+├── InventoryPage.xhtml
+├── Product.java
+├── Inventory.java
+└── persistence.xml
+```
+
+## 8b. Guest Book Using JPA
+
+A Guest Book application that stores and displays guest-book entries using JPA.
+
+### Main Files
+
+```text
+Practical_8(b)/
+├── index.html
+├── index.jsp
+├── GuestBookView.jsp
+├── GuestBook.java
+└── persistence.xml
+```
+
+## 8c. Book Application Using JPA
+
+A JPA application for working with book details.
+
+### Main Files
+
+```text
+Practical8-c/
+├── index.html
+├── index.jsp
+├── BookView.jsp
+├── Book.java
+└── persistence.xml
+```
+
+---
+
+# 🧪 Practical 9 — JPA Associations & Hibernate
+
+## 9a. JPA ORM Associations
+
+A JPA application demonstrating the association between Employee and Department entities.
+
+### Main Files
+
+```text
+Practical9-a/
+├── Employee.java
+├── Department.java
+├── index.html
+├── index.jsp
+├── View.jsp
+└── persistence.xml
+```
+
+## 9b. Guest Book Using Hibernate
+
+A Hibernate application that stores guest-book feedback.
+
+### Main Files
+
+```text
+Practical9-b/
+├── GuestBookBean.java
+├── hibernate.cfg.xml
+├── index.html
+└── fb.jsp
+```
+
+## 9c. Employee Details Using Hibernate
+
+A Hibernate application to store and retrieve employee details.
+
+### Main Files
+
+```text
+Practical9-c/
+├── Employee.java
+├── EmployeeServlet.java
+├── HibernateUtil.java
+├── hibernate.cfg.xml
+├── index.jsp
+└── employees.jsp
+```
+
+---
+
+# 🧪 Practical 10 — Hibernate & Feedback Applications
+
+## 10a. Student Details Using Hibernate
+
+A Hibernate application to store and display student details.
+
+### Main Files
+
+```text
+Practical10-a/
+├── Student.java
+├── StudentDetails.java
+├── StudentServlet.java
+├── HibernateUtil.java
+├── hibernate.cfg.xml
+├── index.jsp
+└── students.jsp
+```
+
+## 10b. Course Details Using Hibernate
+
+A Hibernate application to manage course information.
+
+### Main Files
+
+```text
+Practical10-b/
+├── Course.java
+├── CourseServlet.java
+├── HibernateUtil.java
+├── hibernate.cfg.xml
+├── index.jsp
+└── courses.jsp
+```
+
+## 10c. Feedback Application Using JDBC
+
+A feedback application that saves and displays feedback using Servlets, JSP, and JDBC.
+
+### Main Files
+
+```text
+Practical10-c/
+├── DBConnection.java
+├── Feedback.java
+├── SaveFeedbackServlet.java
+├── ViewFeedbackServlet.java
+├── index.jsp
+├── feedback.jsp
+└── viewFeedback.jsp
+```
+
+---
+
+# ⚠️ Practicals Not Present in This ZIP
+
+The following practical folders are not included in the supplied repository archive:
+
+- **5b — JSP Expression Language (EL)**
+- **5c — JSP Standard Tag Library (JSTL) CRUD**
+- **6a — Currency Converter Using EJB**
+- **6b — Room Reservation System Using EJB**
+
+They remain listed in the practical overview as missing source folders and should not be marked as completed until their files are added.
+
 # 📊 Practical Overview
 
-| Practical | Topic                | Main Technology        |
-| --------- | -------------------- | ---------------------- |
-| 1a        | Calculator           | Servlet                |
-| 1b        | Login                | Servlet                |
-| 1c        | Registration         | Servlet + JDBC         |
-| 2a        | Request Dispatcher   | Servlet                |
-| 2b        | Cookies              | Servlet                |
-| 2c        | Sessions             | Servlet                |
-| 3a        | File Upload/Download | Servlet                |
-| 3b        | Quiz Application     | Servlet + JDBC + MySQL |
-| 3c        | Non-Blocking Read    | Servlet Async I/O      |
-| 4a        | Intrinsic Objects    | JSP                    |
-| 4b        | Form Validation      | JSP + JavaBean         |
-| 4c        | Registration/Login   | JSP + JDBC             |
-| 5a        | Employee Update      | JSP + JDBC             |
-| 5b        | Expression Language  | JSP EL                 |
-| 5c        | CRUD                 | JSP + JSTL + MySQL     |
-| 6a        | Currency Converter   | EJB                    |
-| 6b        | Room Reservation     | EJB + JDBC             |
-| 6c        | Shopping Cart        | Stateful EJB           |
-
+| Practical | Topic | Main Technology | Status in ZIP |
+| --- | --- | --- | --- |
+| 1a | Calculator | Servlet | Present |
+| 1b | Login | Servlet | Present |
+| 1c | Registration | Servlet + JDBC | Present |
+| 2a | Request Dispatcher | Servlet | Present |
+| 2b | Cookies | Servlet | Present |
+| 2c | Sessions | Servlet | Present |
+| 3a | File Upload | Servlet | Present |
+| 3a | File Download | Servlet | Present |
+| 3b | Quiz Application | Servlet + JDBC | Present |
+| 3c | Non-Blocking Read | Servlet Async I/O | Present |
+| 4a | JSP Intrinsic Objects | JSP | Present |
+| 4b | Form Validation | JSP + JavaBean | Present |
+| 4c | Registration/Login | JSP + JDBC | Present |
+| 5a | Employee Update | JSP + JDBC | Present |
+| 5b | Expression Language | JSP EL | **Missing** |
+| 5c | CRUD | JSP + JSTL + MySQL | **Missing** |
+| 6a | Currency Converter | EJB | **Missing** |
+| 6b | Room Reservation | EJB + JDBC | **Missing** |
+| 6c | Shopping Cart | Stateful EJB | Present |
+| 7a | JSF Hit Counter | JSF + EJB | Present |
+| 7b | Visitor Statistics | JSF + EJB / MDB | Present |
+| 7c | Marks Entry | JSF + EJB | Present |
+| 8a | Inventory Management | JPA + EJB | Present |
+| 8b | Guest Book | JPA | Present |
+| 8c | Book Application | JPA | Present |
+| 9a | Employee/Department Associations | JPA | Present |
+| 9b | Guest Book | Hibernate | Present |
+| 9c | Employee Details | Hibernate | Present |
+| 10a | Student Details | Hibernate | Present |
+| 10b | Course Details | Hibernate | Present |
+| 10c | Feedback Application | Servlet + JSP + JDBC | Present |
 ---
 
 # ⚙️ Setup & Requirements
@@ -726,7 +944,7 @@ These databases are used throughout the practicals for registration, quiz, emplo
 
 # 🎯 Learning Outcomes
 
-By completing these practicals, I practiced:
+The source folders in this repository cover the following concepts (some listed practicals are currently missing, as noted above):
 
 * ✅ Java Servlets
 * ✅ HTTP Request & Response
@@ -754,12 +972,16 @@ By completing these practicals, I practiced:
 # 📚 Practical Progress
 
 ```text
-Practical 01  ████████████████████ 100% ✅
-Practical 02  ████████████████████ 100% ✅
-Practical 03  ████████████████████ 100% ✅
-Practical 04  ████████████████████ 100% ✅
-Practical 05  ████████████████████ 100% ✅
-Practical 06  ████████████████████ 100% ✅
+Practical 01  Source folder present ✅
+Practical 02  Source folder present ✅
+Practical 03  Source folders present ✅
+Practical 04  Source folder present ✅
+Practical 05  Partial — 5b and 5c missing ⚠️
+Practical 06  Partial — 6a and 6b missing ⚠️
+Practical 07  Source folders present ✅
+Practical 08  Source folders present ✅
+Practical 09  Source folders present ✅
+Practical 10  Source folders present ✅
 ```
 
 ---
